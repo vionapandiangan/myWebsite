@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+body {
+    background-image: url('lautviona.jpeg ');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: sans-serif; 
+    padding: 20px;
+    margin: 0;
+}
+
+.header {
+    background-color: pink;
+    color: green;
+    padding: 15px;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 15px;
+}
+
+.menu {
+    background-color: darkslateblue;
+    padding: 15px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: darkgray;
+    color: white;
+    text-align: center;
+    box-shadow: 0 1px 3px lightgray, gray;
+    border-radius: 3px;
+}
+
+.menu li:hover {
+    background-color: skyblue;
+    padding: 9px;
+}
+
+.main {
+    background-color: rgb(248, 248, 248);
+    padding: 15px;
+}
+
+.aside {
+    background-color: darkslateblue;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px lightgray, gray;
+}
+
+.footer {
+    background-color: darkgray;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 11px;
+}
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+@media only screen and (min-width: 700px) {
+    .container {
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    .responsive-img {
+        max-width: 680px;
+        display: block;
+        margin: 0 auto;
+    }
+}
